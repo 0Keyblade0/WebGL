@@ -1,0 +1,73 @@
+<!-- Last edited by Dietrich Geisler 2025 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<header>
+
+    <title>Colorful Kitchenware</title>
+
+    <!-- Sets an icon for the page -->
+    <link rel="icon" type="image/x-icon" href="/resources/favicon.ico">
+</header>
+
+<body onload="main()">
+
+    <h1 style="font-size: 36px;">Colorful Rotating Kitchenware</h1>
+
+    <!-- WebGL Utility Scripts -->
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-quat03.js"></script>
+
+    <!-- Select a JavaScript file -->
+    <script src="base.js"></script>
+
+    <!-- Setup the Canvas -->
+    <canvas id="canvas" width="400" height="400">
+        Please use a browser that supports "canvas"
+    </canvas>    
+
+    <p>
+        Insructions:    
+    </p>
+
+    <p>
+        Use up and down arrow keys to move the perspective camera forward or backward.
+    </p>
+
+    <p>
+        You will need to move it backward initially to see all objects in scene.
+    </p>
+
+    <p>
+        To change between camera types press "c" on keyboard.
+    </p>
+
+    <p>
+        Use buttons to manipulate objects in the scene.
+    </p>
+
+    <p>
+        <input type="button" onclick="plus1()" value="Move Glass positively across x axis">
+        <input type="button" onclick="minus1()" value="Move Glass negatively across x axis">
+    </p>
+
+    <p>
+        <input type="button" onclick="plus2()" value="Move Bowl positively across y axis">
+        <input type="button" onclick="minus2()" value="Move Bowl negatively across y axis">
+    </p>
+
+    <p>
+        <input type="button" onclick="plus3()" value="Move Spoon positively across z axis">
+        <input type="button" onclick="minus3()" value="Move Spoon negatively across z axis">
+    </p>
+
+    <p>
+        <input type="button" onclick="reverse()" value="Reverse objects">
+    </p>
+
+</body>
+
+</html>
