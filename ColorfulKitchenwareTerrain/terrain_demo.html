@@ -1,0 +1,55 @@
+<!-- Last edited by Dietrich Geisler 2024 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<header>
+
+    <title>Colorful Kitchenware x Blue Terrrain</title>
+
+    <!-- Sets an icon for the page -->
+    <link rel="icon" type="image/x-icon" href="/resources/favicon.ico">
+</header>
+
+<body onload="main()">
+    <h1 style="font-size: 36px;">Colorful Kitchenware x Blue Terrain</h1>
+
+    <!-- WebGL Utility Scripts -->
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-quat03.js"></script>
+
+    <!-- Load our terrain script -->
+    <script src="terrain.js"></script>
+
+    <!-- Select a JavaScript file -->
+    <script src="terrain_demo.js"></script>
+
+    <!-- Setup the Canvas -->
+    <canvas id="canvas" width="400" height="400">
+        Please use a browser that supports "canvas"
+    </canvas>
+
+    <!-- Explanation of camera controls -->
+
+    <p>
+        <button id="regenButton">Regenerate Terrain</button>
+        <label for="roughnessSlider">Roughness:</label>
+        <input type="range" id="roughnessSlider" min="5" max="50" value="20">
+    </p>
+    
+    <p>Roughness: <span id="roughnessValue">20</span></p>
+
+    <p>
+        Controls for camera movement: 
+        WASD Up/Left/Down/Right, E to go forward, and Q to go backwards.
+    </p>
+
+    <p>
+        Controls for camera roation: 
+        UpArrow/LeftArrow/DownArrow/RightArrow Up/Left/Down/Right
+    </p>
+</body>
+
+</html>
